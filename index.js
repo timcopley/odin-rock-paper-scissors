@@ -8,4 +8,8 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    return prompt("Choose rock, paper, or scissors: ");
+}
+
+console.log(getHumanChoice());
