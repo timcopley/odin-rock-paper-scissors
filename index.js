@@ -36,32 +36,32 @@ function playRound (humanChoice) {
     }
     else if (humanChoice === "rock") {
         if (computerChoice === "paper") {
+            computerScore += 1;            
             displayResults(`You lose: ${computerChoice} beats ${humanChoice}!`)
-            computerScore += 1;
         }
         else { 
-            displayResults(`You win: ${humanChoice} beats ${computerChoice}!`)
             humanScore += 1;
+            displayResults(`You win: ${humanChoice} beats ${computerChoice}!`)
         }
     }
     else if (humanChoice === "paper") {
         if (computerChoice === "scissors") {
-            displayResults(`You lose: ${computerChoice} beats ${humanChoice}!`)
             computerScore += 1;
+            displayResults(`You lose: ${computerChoice} beats ${humanChoice}!`)
         }
         else { 
-            displayResults(`You win: ${humanChoice} beats ${computerChoice}!`)
             humanScore += 1;
+            displayResults(`You win: ${humanChoice} beats ${computerChoice}!`)
         }
     }
     else if (humanChoice === "scissors") {
         if (computerChoice === "rock") {
+            computerScore += 1;            
             displayResults(`You lose: ${computerChoice} beats ${humanChoice}!`)
-            computerScore += 1;
         }
         else { 
+            humanScore += 1;            
             displayResults(`You win: ${humanChoice} beats ${computerChoice}!`)
-            humanScore += 1;
         }
     }      
 }   
